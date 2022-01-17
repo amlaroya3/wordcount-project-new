@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WordCount</title>
+  </head>
+  <body>
+    <h2> Text is </h2>
+    <h2>{{fulltext}}</h2>
+    <button onclick="history.back()">Go Back</button>
+    
+    <p>
+        Total word count is <b>{{kount}}</b><br />
+        The items are :<br />
+        {% for word, counttotal in sorted %}
+            {{ word }} - {{ counttotal}}
+            <br />
+        {% endfor %}
+    </p>
+  </body>
+</html>

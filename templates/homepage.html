@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>testing Django</title>
+  </head>
+  <body>
+    <p>
+        Hi this is {{name}} and I am learning Django        
+    </p>
+    <form action="{% url 'counts' %}">
+        <textarea cols="40" rows="10" name="fulltext"></textarea>
+        <br />
+        <input type="submit" value="Count !" />
+    </form>
+    <a href="{% url 'about' %}">About Django</a>
+  </body>
+</html>
