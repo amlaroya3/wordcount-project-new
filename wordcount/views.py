@@ -16,7 +16,7 @@ def count(request):
         else :
              wrdcnt[word] = 1
     srtd = sorted(wrdcnt.items(), key = operator.itemgetter(1), reverse = True)
-    print(srtd)
+ #  print(srtd)
     return render(request, 'count.html', {'kount' : len(mwords), 'fulltext' : mtxt, 'sorted' : srtd})
 
 def testpage(request):
